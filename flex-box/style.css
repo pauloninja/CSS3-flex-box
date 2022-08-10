@@ -1,0 +1,41 @@
+body{
+    background-color: aqua;
+}
+/* display flex deixa linha retas
+flex-grow  e mais utlizado 1 deixa tudo igual os elemento
+se coloca 2 almenta mais a que colocar no flex1,2,3
+flex-shrink nao e muito utilizado é o oposto do flex-grow
+flex-basis é o tamanho do elemento representado na tela*/
+.container{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /*justify-content: space-around; flex end elementos no fim flex start começo flex center centraliza
+    space-between elementos ficam espaçados igualmente , space-around deixa uma borda no canto, space-evely deixa tudo igual*/
+}
+/* flex-diretion: row-reverse inverte os elementos
+flex-diretion: column; vira coluna
+flex-diretion: column-reverse; troca as coluna
+order muda a ordem*/
+
+
+.box{
+    height: 100px;
+    /*flex 1 1 300px
+    flex 1grow 2shirink 3basis*/
+    width: 100px;
+}
+
+.first {
+    background-color: red;
+}
+.second{
+    background-color: grey;
+    
+}
+.third{
+    background-color: black;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+
+       .container{
+           display: flex; /*block fica em bloc*/
+           width: 100%;
+           background-color: blueviolet;
+
+       }
+       .box{
+            height: 100px;
+            flex-grow: 1;
+            flex-basis: 500px;
+       }
+       .first {
+            background-color: red;
+            flex-shrink: 1;
+
+        }
+        .second{
+            background-color: grey;
+            flex-shrink: 1;
+        }
+        .third{
+            background-color: black;
+            flex-shrink: 2;
+            /*oposto do grow diminui conforme a tela diminui*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+</body>
+</html>

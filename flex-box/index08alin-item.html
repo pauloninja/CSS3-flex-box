@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+
+       .container{
+           display: flex;
+           width: 100%;
+           height: 300px;
+           background-color: rgb(223, 226, 43);
+           justify-content: center;
+           align-items: flex-end;/*flex-end msm coisa mas joga para baixo,flex-start joga pra cima, stretch poe o elemento na tela toda mais tem q tita altuta do box aluga até o fim, center centraliza no container*/
+       }
+       .box{
+           height: 100px;
+            width: 100px;
+        
+       }
+       .first {
+            background-color: red;
+            
+
+        }
+        .second{
+            background-color: grey;
+        
+        }
+        .third{
+            background-color: black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+</body>
+</html>

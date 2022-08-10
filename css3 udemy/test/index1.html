@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: separate;
+        }
+        tr:hover{
+            background-color: #c3e6e5;
+        }
+        th, td{
+            padding: 7px;
+        }
+        th{
+            text-transform: uppercase;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #111;
+            text-align: center;
+            font-size: 90%;
+            letter-spacing: 0.1em ;
+        }
+        .alternado{
+            background-color: #b64c4c;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+<body>
+    <h2>Estilizando Tabelas</h2>
+    <table>
+        <tr >
+            <th>Codigo</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr class="alternado">
+            <th>feijao</th>
+            <th>Arroz</th>
+            <th class="numero">1200</th>
+        </tr>
+        <tr>
+            <th>Po</th>
+            <th>Tomate</th>
+            <th class="numero">4000</th>
+        </tr>
+        <tr class="alternado">
+            <th>Uva</th>
+            <th>Orange</th>
+            <th class="numero">700</th>
+        </tr>
+        <tr>
+            <th>Banana</th>
+            <th>Mexiriga</th>
+            <th class="numero">800</th>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+
+       .container{
+           display: flex;
+           width: 100%;
+           height: 300px;
+           background-color: rgb(223, 226, 43);
+           justify-content: center;
+           align-items: center;
+       }
+       .box{
+           height: 100px;
+            width: 100px;
+        
+       }
+       .first {
+            background-color: red;
+        }
+        .second{
+            background-color: grey;
+            align-self: flex-start;/*flex-end, strech,center*/
+        }
+        .third{
+            background-color: black;   
+        }
+        /*display flex, inicia a linha deixa em reta
+        flex-grow, da tamanho aos elementos
+        flex-basis, tamanho inicial do elemento, e o resto preenchido p grow
+        flex- grow shrink basis
+        flex-direction, muda a direção do elemento row column
+        flex-order muda a rotina do elemento da ordem
+        just-content alinha os elementos principal
+        align-items, alinha do eixo principal
+        align-self, alinha so o elemento escolhido*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+</body>
+</html>
